@@ -54,10 +54,140 @@
         h4{
             font-size: 30px;
         }
+
+         #face {
+      border: solid 10px;
+      background-color: #bf311b;
+      width: 300px;
+      height: 300px;
+    }
+     div{
+        position: relative;
+     }
+    #eyebrow-left-one{
+        border: solid black 4px;
+        background-color: black;
+        width: 15px;
+        height: 12px;
+        top: 46px;
+        left: 51px;
+        border-radius: 10px;
+        transform: rotate(-15deg);
+        
+    }
+
+    #eyebrow-left-two{
+        border: solid black 4px;
+        width: 75px;
+        height: 12px;
+        background-color: black;
+        top: 42px;
+        left: 54px;
+        border-radius: 10px;
+        transform: rotate(30deg);
+
+    }
+    #eyebrow-right-one{
+        border: solid black 4px;
+        background-color: black;
+        width: 15px;
+        height: 13px;
+        top: 2px;
+        left: 230px;
+        border-radius: 10px;
+        transform: rotate(-15deg);
+        
+    }
+    #eyebrow-right-two{
+        border: solid black 4px;
+        width: 75px;
+        height: 12px;
+        background-color: black;
+        top: -1px;
+        left: 166px;
+        border-radius: 10px;
+        transform: rotate(-30deg);
+    }
+    
+    #eye-left{
+        width: 10px;
+        height: 10px;
+        border: solid black 18px;
+        border-radius: 50%;
+        background-color: black;
+        left: 68px;
+        top: 10px;
+    }
+
+     #eye-right{
+        width: 10px;
+        height: 10px;
+        border: solid black 18px;
+        border-radius: 50%;
+        background-color: black;
+        left: 188px;
+        top: -37px;
+     }
+       
+
+    #mouth {
+      border: solid 22px;
+      width: 330px;
+      height: 530px;
+      border-radius: 50%;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      position: relative;
+      top: -480px;
+      left: -70px;
+      /*  */
+      transform: rotate(-10deg);
+    }
+
+    #mouth::before {
+      content: '';
+      border: solid 10.9px;
+      display: inline-block;
+      background-color: black;
+      position: relative;
+      top: 467px;
+      left: 42px;
+      border-radius: 50%;
+    }
+
+    .mouth_corner {
+      box-sizing: border-box;
+      width: 14px;
+      height: 37px;
+      border: solid 5px;
+      background-color: black;
+      border-top-left-radius: 11px;
+      border-top-right-radius: 11px;
+      border-bottom-left-radius: 11px;
+      border-bottom-right-radius: 11px;
+    }
+
+    .mouth_corner.one {
+      background-color: black;
+      position: relative;
+      top: -600px;
+      left: 248px;
+      transform: rotate(-63deg);
+    }
+
+    .mouth_corner.two {
+      background-color: black;
+      position: relative;
+      top: -634px;
+      left: 266px;
+      transform: rotate(64deg);
+    }
     </style>
 </head>
 <body>
     <div id="left">
+        <img src="image-Max.jpeg" alt="">
        <h1>ABOUT</h1><br>
        <h1>EXPERIENCE</h1><br>
        <h1>EDUCATION</h1><br>
@@ -82,6 +212,18 @@
         <li>Saxophone</li>
         <h4>AWARD</h4>
 
+    </div>
+    <div id="face">
+        <div id="eyebrow-left-one"></div>
+        <div id="eyebrow-left-two"></div>
+        <div id="eyebrow-right-one"></div>
+        <div id="eyebrow-right-two"></div>
+        <div id="eye-left"></div>
+        <div id="eye-right"></div>
+        <div id="mouth"></div>
+        <div class="mouth_corner one"></div>
+        <div class="mouth_corner two"></div>
+       
     </div>
 </body>
 </html>
